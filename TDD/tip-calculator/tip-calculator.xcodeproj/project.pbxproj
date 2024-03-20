@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D628ABF22B9C5D7800126107 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628ABF12B9C5D7800126107 /* UIViewExtension.swift */; };
+		D628ABF42B9C635400126107 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628ABF32B9C635400126107 /* AmountView.swift */; };
+		D6C00CD12B9DB5C8006E151C /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C00CD02B9DB5C8006E151C /* Tip.swift */; };
+		D6C00CD32B9DB5F0006E151C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C00CD22B9DB5F0006E151C /* HeaderView.swift */; };
 		D6D5B8EF2B9457AA00224CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5B8EE2B9457AA00224CD9 /* AppDelegate.swift */; };
 		D6D5B8F12B9457AA00224CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5B8F02B9457AA00224CD9 /* SceneDelegate.swift */; };
 		D6D5B8F32B9457AA00224CD9 /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5B8F22B9457AA00224CD9 /* CalculatorVC.swift */; };
@@ -49,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D628ABF12B9C5D7800126107 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D628ABF32B9C635400126107 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		D6C00CD02B9DB5C8006E151C /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		D6C00CD22B9DB5F0006E151C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D6D5B8EB2B9457AA00224CD9 /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D5B8EE2B9457AA00224CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6D5B8F02B9457AA00224CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6C00CCF2B9DB5C0006E151C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D6C00CD02B9DB5C8006E151C /* Tip.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		D6D5B8E22B9457AA00224CD9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +142,7 @@
 		D6D5B8ED2B9457AA00224CD9 /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				D6C00CCF2B9DB5C0006E151C /* model */,
 				D6D5B93F2B94887300224CD9 /* factory */,
 				D6D5B93C2B94645300224CD9 /* extention */,
 				D6D5B9372B9463E600224CD9 /* config */,
@@ -172,6 +189,8 @@
 				D6D5B9352B94613C00224CD9 /* SplitInputView.swift */,
 				D6D5B9332B94612A00224CD9 /* TipInputView.swift */,
 				D6D5B92F2B9460E600224CD9 /* ResultView.swift */,
+				D628ABF32B9C635400126107 /* AmountView.swift */,
+				D6C00CD22B9DB5F0006E151C /* HeaderView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -189,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				D6D5B93D2B94646100224CD9 /* UIColor+Extension.swift */,
+				D628ABF12B9C5D7800126107 /* UIViewExtension.swift */,
 			);
 			path = extention;
 			sourceTree = "<group>";
@@ -347,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D628ABF42B9C635400126107 /* AmountView.swift in Sources */,
 				D6D5B8F32B9457AA00224CD9 /* CalculatorVC.swift in Sources */,
 				D6D5B92E2B945FBF00224CD9 /* LogoView.swift in Sources */,
 				D6D5B9392B9463EE00224CD9 /* ThemeColor.swift in Sources */,
@@ -356,9 +377,12 @@
 				D6D5B8EF2B9457AA00224CD9 /* AppDelegate.swift in Sources */,
 				D6D5B93B2B9463F400224CD9 /* ThemeFont.swift in Sources */,
 				D6D5B8F12B9457AA00224CD9 /* SceneDelegate.swift in Sources */,
+				D628ABF22B9C5D7800126107 /* UIViewExtension.swift in Sources */,
 				D6D5B9412B94887D00224CD9 /* LabelFactory.swift in Sources */,
+				D6C00CD12B9DB5C8006E151C /* Tip.swift in Sources */,
 				D6D5B9362B94613C00224CD9 /* SplitInputView.swift in Sources */,
 				D6D5B9342B94612A00224CD9 /* TipInputView.swift in Sources */,
+				D6C00CD32B9DB5F0006E151C /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
